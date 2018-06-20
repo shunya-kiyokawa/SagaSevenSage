@@ -3,6 +3,9 @@
 
 <head>
     <title>七賢人育成ゲーム</title>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header"><a class="navbar-brand" href="#">七賢人育成ゲーム</a></div>
+    </nav>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrapのよみこみ。ここから -->
@@ -15,13 +18,13 @@
 </head>
 
 <body>
+    <div class="p-3 mb-2 bg-light text-white">
     <div class="container-fluid">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="navbar-header"><a class="navbar-brand" href="#">七賢人育成ゲーム</a></div>
-        </nav>
         <div class="container">
-            <div class="embed-responsive embed-responsive-4by3 center-block">
+            <div class="alert alert-dark" role="alert">
+            <div class="embed-responsive embed-responsive-4by3">             
                 <iframe class="embed-responsive-item" src="view/start.html"></iframe>
+            </div>
             </div>
             <h3 class="text-center"><a href="https://ja.wikipedia.org/wiki/%E4%BD%90%E8%B3%80%E3%81%AE%E4%B8%83%E8%B3%A2%E4%BA%BA" target="_blank">七賢人とは</a></h3>
             <h3 class="text-center"><a href="https://www.saga-hizen150.com/" target="_blank">佐賀幕末維新博覧会へ行こう！！</a></h3>
@@ -32,7 +35,7 @@
                     </a>
                 </div>
                 <div class="col-4">
-                    <a href="https://www.saga-hizen150.com/" target="_blank"><img class="img-responsive" src="picture/page-image2.png"></img>
+                    <a href="https://www.saga-hizen150.com/" target="_blank" ><img class="img-responsive" src="picture/page-image2.png"></img>
                     </a>
                 </div>
                 <div class="col-4">
@@ -42,13 +45,14 @@
             </div>
         </div>
     </div>
+    
 
     <footer class="container-fluid">
         <a href="素材提供元" target="_blank">Special Thanks</a>
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" target="_blank">Tweet</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </footer>
-
+    </div>
 </body>
 
 </html>
