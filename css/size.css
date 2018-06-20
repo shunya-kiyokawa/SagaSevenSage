@@ -28,16 +28,16 @@ footer a {
     margin-bottom: 20px;
 }
 
-.outer{
+.out{
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.inner{
-    position: absolute;
-    top: 50%;
-    left: 50%;
+.in{
     transform: translateY(-50%) translateX(-50%);
     -webkit-transform: translateY(-50%) translateX(-50%);
+    top: 40%;
+    left: 50%;
+    position: absolute;
 }
