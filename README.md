@@ -1,5 +1,6 @@
 # SagaSevenSage
 * 佐賀七賢人の育成ゲームです
+* 佐賀大学と株式会社オプティムの共同開発アプリとなります
 
 # License
 * bootstrap 4.1.1 (MIT License) 
