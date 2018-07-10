@@ -1,13 +1,91 @@
+body{
+    margin:0;
+    background-image: url('../works/index/index背景-低解像度(72dpi).png');
+}
+
+
+.container{
+    margin: 0;
+    width: 80%;
+    height: 80%;
+}
+.navbar{
+    color:white;
+    background-color: rgb(36, 62, 85);
+}
+
+.navbar-toggler-icon{
+    color:white;
+    background-color: rgb(36, 62, 85);
+}
+
+.forecast1{
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(255,252,251);
+    width: 49%;
+    float: left;
+    margin:10px 0 0 0;
+    text-align: center;
+}
+.forecast2{
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(255,252,251);
+    width: 49%;
+    float: right;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+.forecast3{
+    margin: 100px 0 0 0;
+    border-radius: 20px 20px 20px 20px;
+    background-color: rgb(255,252,251);
+    width: 99%;
+    clear: both;
+    text-align: center;
+}
+
+.floatlist1{
+    float: left;
+    width: 49%;
+}
+.floatlist2{
+    float: right;
+    width: 49%;
+}
+
+#facebook{
+    width:5%;
+    height: 5%;
+}
+
+#sagaken{
+    width: 15%;
+    height: 15%;
+}
+
+#bakumatuishin{
+    width: 10%;
+    height: 10%;
+}
 .img-responsive {
     width: 100%;
 }
 
 footer {
-    padding: 50px 0;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color:  rgba(36, 62, 85, 0.7);
+    width: 99%;
+    height: 99%;
+    color: white;
+    padding: 25px 5px 100px 5px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 footer a {
-    margin: 0 20px;
+    margin: 0 20px;    
 }
 
 #loader {
