@@ -45,8 +45,10 @@ body{
 }
 
 .floatlist1{
+    color: white;
     float: left;
     width: 49%;
+    border-right: 1px solid white;
 }
 .floatlist2{
     float: right;
@@ -120,4 +122,9 @@ footer a {
     top: 40%;
     left: 50%;
     position: absolute;
+}
+
+hr{
+    border:none;
+    border-top: 1px solid black;
 }
