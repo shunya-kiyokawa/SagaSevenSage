@@ -8,3 +8,5 @@
 * Popper.js (MIT License)
 * jQuery 3.3.1 (MIT Licnese)
     * https://jquery.org/license/
+* jquery.cookie (MIT License)
+    * https://github.com/carhartl/jquery-cookie/blob/master/MIT-LICENSE.txt
