@@ -1,0 +1,20 @@
+html{ 
+    max-width: 1334px;
+    max-height: 750px;
+    margin: 20px;
+}
+
+body{
+    background-image:url("index背景-低解像度(72dpi).png");
+    
+    font-family: 'ヒラギノ明朝 Pro';
+
+}
+
+img{
+    width: 500px;
+    height: 250px;
+}
+
+
+
