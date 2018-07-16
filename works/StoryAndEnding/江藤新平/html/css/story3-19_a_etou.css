@@ -1,0 +1,36 @@
+html{ 
+    max-width: 1334px;
+    min-width: 750px;
+    width: 100%;
+    font-family: "HG丸ｺﾞｼｯｸM-PRO";
+}
+
+body{
+    max-width: 1324px;
+    background-image: url("../../../江藤新平/eto_back_07.jpg"); 
+    background-repeat: no-repeat;
+    background-position:center top;
+    background-size: 99%;
+}
+
+.ture{
+    max-width: 1034px;
+    width: 80%;
+    color: white;
+    font-size: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 10%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+#next{
+    max-width: 834px;
+    width: 50%;
+    color: white;
+    font-size: 60px;
+    background-color: rgba(0, 135, 0,0.8);
+    margin-left: 23%;
+    margin-top: 15%;
+    text-align: center;
+}
