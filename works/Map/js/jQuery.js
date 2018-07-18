@@ -2,29 +2,28 @@ var count;
 main();
 
 function main() {
- initialization();
- change_pinone();
+    initialization();
+    change_gazou();
 }
 
 // 初期化処理
 function initialization() {
- count = 1;
- $('.pin1').html("<img src='118567.png'>");
+    count = 1;
+    $('.gazou').html("<img src='副島⓵pin/118567.png'>");
 }
 
 // 画像がタッチされたらカウントしていき、画像を差し替える
-function change_pinone() {
- $('.pin1').click(function () {
- if (count < 9) {
- count += 1;
- $('.pin1').html("<img src='picture/"+count+".jpg'>");
-        } else if (count == 9) {
- count += 1;
- $('.pin1').html("<a href='https://www.low-ya.com/category/BED_METAL/F911_G1248.html'><img src='picture/"+count+".jpg'></a>");
-        } else {
- // none
-        }
+function change_gazou() {
+    $('.gazou').click(function () {
+        count += 1;
+        $('.gazou').html("<img src='副島⓵pin/"+count+".png'>");
     })
 }
-
-console.log("Hello");
+/*
+function change_gazou() {
+    $('.gazou').click(function () {
+        count += 1;
+        $('.gazou').children('img').attr('src', 'picture/'+count+'.jpg');
+    })
+}
+*/

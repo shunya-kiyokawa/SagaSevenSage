@@ -1,7 +1,5 @@
 body{
-    background-image:  url("副島①.png");
+    background-image:  url('../works/Map/imgs/nmap 副島１.png');
     background-repeat: no-repeat;
     background-size: contain;
 }
-
-$('p').css("yayayay");
