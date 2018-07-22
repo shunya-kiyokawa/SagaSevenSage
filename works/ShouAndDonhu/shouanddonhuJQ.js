@@ -1,33 +1,13 @@
-//htmlとつながっているか確認用。確認後に消去
-document.write("JQ")
+document.write("JS")
+//リンクを確認
 
-var count;
-main();
+$(function() {
+ $(".butom_2").click(function () {
+ 
+ $(".text").text("テスト１");
+        
+    });
+});
+//黄色のボタンをクリックすると別の文字を表示するコード
 
-function main() {
- initialization();
- change_gazou();
-}
-
-// 初期化処理
-function initialization() {
- count = 1;
- $('.gazou').html("<img src='../works/ShouAndDonhu/imag/1.jpg' width='200' height='250'>");
-}
-
-// 画像がタッチされたらカウントしていき、画像を差し替える
-function change_gazou() {
- $('.gazou').click(function () {
- if (count < 3) {
- count += 1;
- $('.gazou').html("<img src='../works/ShouAndDonhu/imag/"+count+".jpg' width='200' height='250'>");
-        } else if (count == 3) {
- count += 1;
- $('.gazou').html("<img src='../works/ShouAndDonhu/imag/last.jpg' width='300' height='250'>");
-        } else {
- // none
-        }
-    })
-}
-
-//導入のラストをどうするかによって最後に表示する画像を変える。数字は使った画像数に応じて変更(1以外)。リンクはhtmlに書いて確認
+//・クリック毎に次のテキストに変更する方法・変更に合わせて背景を変更する方法が分かりません
