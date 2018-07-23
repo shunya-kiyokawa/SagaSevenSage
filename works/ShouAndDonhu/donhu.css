@@ -6,7 +6,7 @@ html{
 
 body{
     max-width: 1324px;
-    background-image:,url("../works/ShouAndDonhu/eto/1%20.jpg"); 
+    background-image: url("../works/ShouAndDonhu/eto/1%20.jpg"); 
     background-repeat: no-repeat;
     background-position: right 50px top 20px, center top;
     background-size: 30%,99%;
@@ -15,7 +15,11 @@ body{
 .nametitle{ 
 }
 
-p.haikei img { width:100%; height: auto;}
+p.haikei img { 
+    width:100%;
+    height: auto;
+    position:relative;
+}
 
 
 .coment{
@@ -30,6 +34,7 @@ p.haikei img { width:100%; height: auto;}
 .coment img{
     margin: 0;
     width: 105%;
+    
 }
 
 .butom_1{
@@ -71,4 +76,14 @@ p.haikei img { width:100%; height: auto;}
 
 /*画面がstoryAbdEndingを参考に作りました。
 セリフ枠と背景画像が重ならない。画面サイズ変更時にボタンの位置がずれる等の問題が発生しています。
-＊/
+*/
+
+
+/* Facebookの質問②の回答です。
+画面サイズの変更に耐えられるtextの場所の指定方法(画像上への書き込み)
+http://www.htmq.com/style/font-size.shtml
+このサイトにも載っていますが、font-sizeを、%やキーワードで指定することで実現できます。
+*/
+.text{
+    font-size: x-large;
+}
