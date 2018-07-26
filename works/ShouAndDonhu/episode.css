@@ -7,13 +7,21 @@ html{
 body{
     background-image:url("index背景-低解像度(72dpi).png");
     
-    font-family: 'ヒラギノ明朝 Pro';
 
 }
 
+.title-image{
+    width: 120px;
+    height: 40px;
+}
+.chara-image{
+    width: 250px;
+    height: 150px;
+}
+
 img{
-    width: 500px;
-    height: 250px;
+    width: 100px;
+    height: 30px;
 }
 
 
