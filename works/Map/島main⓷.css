@@ -1,0 +1,24 @@
+.map{
+    position:relative;
+    width:100%;
+    height:100%;
+    
+}
+
+.pin-1{
+    position: absolute;
+    top: 68%;
+    left: 60%;
+}
+
+.pin-2{
+    position: absolute;
+    top: 14%;
+    left: 75%;
+}
+
+.pin-3{
+    position: absolute;
+    top: 84%;
+    left: 18%;
+}
