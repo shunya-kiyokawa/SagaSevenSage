@@ -1,6 +1,12 @@
+body{
+  background-image: url("../works/TopAndKyara/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .select-title{
-  width: 30%;
-  height: 10%;
+  width: 22%;
+  height: 8%;
   margin-top: 5px;
   margin-right: 20%;
 }
@@ -8,11 +14,23 @@
 .select-chara{
   width: 30%;
   height: 5%;
+  margin-top: -1%;
+}
+
+.select-area{
+  margin-top: -2%;
 }
 
 .select-image{
+  width: 16%;
+  height: 44%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.select-name{
+  width: 22%;
+  height: 12%;
 }
 
 .button-secret{
