@@ -1,5 +1,12 @@
+body{
+  background-image: url("../新背景.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .relative{
   position: relative;
+  margin-top: -1%;
 }
 
 .title-image{
@@ -11,8 +18,8 @@
 .name-image{
   position: absolute;
   width: 30%;
-  height: 50%;
-  top: 25%;
+  height: 55%;
+  top: 22.5%;
   left: 25%;
 }
 
