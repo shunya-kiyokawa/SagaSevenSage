@@ -1,11 +1,12 @@
 body{
-  background-image: url("../works/ClearAndForEnding/新背景.png");
+  background-image: url("../新背景.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .relative{
   position: relative;
+  margin-top: -1%;
 }
 
 .title-image{

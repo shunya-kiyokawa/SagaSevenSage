@@ -1,4 +1,13 @@
 $(function(){
+  if($.cookie('secret') == undefined){
+    $.cookie('secret', 'no');
+  }
+  if($.cookie('all-clear') == undefined){
+    $.cookie('all-clear', 'no');
+  }
+  if($.cookie('chapter') == undefined){
+    $.cookie('chapter', '1');
+  }
   // クッキーの値取得
   var chapterCookieValue = $.cookie('chapter');
   var charaCookieValue = $.cookie('chara');
@@ -22,7 +31,11 @@ $(function(){
     default:
       $('.chapter-image').hide();
       $('.name-image').css('left', '37.5%');
-      break;
+  }
+
+  if(secretCookieValue == "yes"){
+      $('.chapter-image').hide();
+      $('.name-image').css('left', '37.5%');
   }
   
   // Cookieの値によって人物画像変更
@@ -61,24 +74,25 @@ $(function(){
       break;
   }
 
-  // 画面遷移の条件分岐（仮：全ストーリークリアかつ第三章のとき）
-
   // 秘密のパスワードかどうか
-  if(secretCookieValue == true){
-    $('.link-text').attr("href", "chara.html");
-  }
-  // 章の全ストーリークリアかどうか
-  if(allClearCookieValue == true){
-    // 第三章かどうか
-    if(chapterCookieValue == "3"){
-      $('.link-text').attr("href", "endhing.html");
-    }
-    else{
-      $('.link-text').attr("href", "map.html");
-    }
+  if(secretCookieValue == "yes"){
+    $('.link-text').attr('href', 'chara.html');
   }
   else{
-    $('.link-text').attr("href", "map.html");
-    // 当該イベントピン非表示
+    // 章の全ストーリークリアかどうか
+    if(allClearCookieValue == "yes"){
+      // 第三章かどうか
+      if(chapterCookieValue == "3"){
+        $('.link-text').attr('href', 'endhing.html');
+      }
+      else{
+        $('.link-text').attr('href', 'map.html');
+      }
+    }
+    else{
+      $('.link-text').attr('href', 'map.html');
+      // 当該イベントピン非表示
+    }
   }
+
 });
