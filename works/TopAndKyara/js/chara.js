@@ -1,7 +1,7 @@
 $(function(){
-  var imageSize = 'width="15%" height="40%"';
-  var nameSize = 'width="22%" height="12%"';
   var image_id = 1;
+  var worksDir = "../works/TopAndKyara/"
+  var fadeTime = 125;
 
   InitImage();
   
@@ -9,60 +9,60 @@ $(function(){
   $('.select-left').click(function(){
     image_id--;
     if(image_id < 1) image_id = 7;
-    $(".select-image").fadeOut(150, SwitchImage);
-    $(".select-image").fadeIn(150);
-    $(".select-name").fadeOut(150);
-    $(".select-name").fadeIn(150);
+    $(".select-image").fadeOut(fadeTime, SwitchImage);
+    $(".select-image").fadeIn(fadeTime);
+    $(".select-name").fadeOut(fadeTime);
+    $(".select-name").fadeIn(fadeTime);
   });
   $('.select-right').click(function(){
     image_id++;
     if(image_id > 7) image_id = 1;
-    $(".select-image").fadeOut(150, SwitchImage);
-    $(".select-image").fadeIn(150);
-    $(".select-name").fadeOut(150);
-    $(".select-name").fadeIn(150);
+    $(".select-image").fadeOut(fadeTime, SwitchImage);
+    $(".select-image").fadeIn(fadeTime);
+    $(".select-name").fadeOut(fadeTime);
+    $(".select-name").fadeIn(fadeTime);
   });
 
   function InitImage(){
-    $('.select-image').html("<img src='../works/TopAndKyara/etou.png'" + imageSize + ">");
-    $('.select-name').html("<img src='../works/TopAndKyara/image/江藤新平.png'" + nameSize + ">");
+    $('.select-image').attr('src', worksDir + 'etou.png');
+    $('.select-name').attr('src', worksDir + 'image/江藤新平.png');
   }
   // idの値によって画像を変更
   function SwitchImage(){
     switch(image_id){
       case 1:
-        $('.select-image').html("<img src='../works/TopAndKyara/etou.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/江藤新平.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'etou.png');
+        $('.select-name').attr('src', worksDir + 'image/江藤新平.png');
         $.cookie('chara', 'etou', { expires: 1});
         break;
       case 2:
-        $('.select-image').html("<img src='../works/TopAndKyara/ooki.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/大木喬任.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'ooki.png');
+        $('.select-name').attr('src', worksDir + 'image/大木喬任.png');
         $.cookie('chara', 'ooki', { expires: 1});
         break;
       case 3:
-        $('.select-image').html("<img src='../works/TopAndKyara/soejima.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/副島種臣.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'soejima.png');
+        $('.select-name').attr('src', worksDir + 'image/副島種臣.png');
         $.cookie('chara', 'soejima', { expires: 1});
         break;
       case 4:
-        $('.select-image').html("<img src='../works/TopAndKyara/ookuma.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/大隈重信.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'ookuma.png');
+        $('.select-name').attr('src', worksDir + 'image/大隈重信.png');
         $.cookie('chara', 'ookuma', { expires: 1});
         break;
       case 5:
-        $('.select-image').html("<img src='../works/TopAndKyara/sano.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/佐野常民.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'sano.png');
+        $('.select-name').attr('src', worksDir + 'image/佐野常民.png');
         $.cookie('chara', 'sano', { expires: 1});
         break;
       case 6:
-        $('.select-image').html("<img src='../works/TopAndKyara/nabesima.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/鍋島直正.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'nabesima.png');
+        $('.select-name').attr('src', worksDir + 'image/鍋島直正.png');
         $.cookie('chara', 'nabesima', { expires: 1});
         break;
       case 7:
-        $('.select-image').html("<img src='../works/TopAndKyara/sima.png'" + imageSize + ">");
-        $('.select-name').html("<img src='../works/TopAndKyara/image/島義勇.png'" + nameSize + ">");
+        $('.select-image').attr('src', worksDir + 'sima.png');
+        $('.select-name').attr('src', worksDir + 'image/島義勇.png');
         $.cookie('chara', 'sima', { expires: 1});
         break;
     }

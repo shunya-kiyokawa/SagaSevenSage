@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+  background-image: url("");
+}
+
+.relative{
+  position: relative;
+}
+
+.absolute{
+  position: absolute;
+}
+
+.title{
+  display: block;
+  height: auto;
+  max-width: 50%;
+  margin-left: 25%;
+}

@@ -5,26 +5,40 @@
     <!-- bootstrapのよみこみ。ここから -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <!-- ここまで -->
     <link rel="stylesheet" href="../css/size.css" type="text/css">
+    <link rel="stylesheet" href="../works/TopAndKyara/css/chara.css" type="text/css">
+    <script type="text/javascript" src="../works/TopAndKyara/js/chara.js"></script>
 </head>
 
 <body>
     <div id="contents"  class="text-center">
-        <p class="font-weight-bold">
-            <span class="display-4">キャラ選択画面</span>
+        <p>
+            <a href="secret.html">
+                <img class="button-secret" src="../works/TopAndKyara/image/secret.png">
+            </a>
+            <img class="select-title" src="../works/TopAndKyara/image/キャラ選択.png"><br>
+            <img class="select-chara" src="../works/TopAndKyara/image/好きなキャラを選んでね.png">
         </p>
-        <a href="episode.html" style="text-decoration: none;">
-            <button type="button" class="btn btn-outline-primary btn-lg">
-                Next<br>
-            </button>
 
-        <a href="story.html" style="text-decoration: none;">
-            <button type="button" class="btn btn-outline-primary btn-lg">
-                秘密のパスワード<br>
-            </button>
-        </a>
+        <div class="select-area">
+            <a class="select-left">
+                <img src="../works/TopAndKyara/image/左矢印.png" width="20%" height="25%">
+            </a>
+            <a href="episode.html">
+                <img class="select-image">
+            </a>
+            <a class="select-right">
+                <img src="../works/TopAndKyara/image/右矢印.png" width="20%" height="25%"><br>
+            </a>
+        </div>
+
+        <p>
+            <img class="select-name">
+        </p>
+
     </div>
 </body>
